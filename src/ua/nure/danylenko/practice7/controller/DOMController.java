@@ -23,6 +23,7 @@ import ua.nure.danylenko.practice7.constants.Constants;
 import ua.nure.danylenko.practice7.entity.Devices;
 
 public class DOMController {
+
     private String xmlFileName;
 
     // main container
