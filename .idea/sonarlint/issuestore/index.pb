@@ -1,0 +1,31 @@
+
+a
+1src/ua/nure/danylenko/practice7/entity/Group.java,e\d\ed29194b2582115e3baa8811928f20565d17dab3
+c
+3src/ua/nure/danylenko/practice7/entity/Devices.java,b\3\b34c6634db6aceaf868a816e04d7947d50321116
+h
+8src/ua/nure/danylenko/practice7/entity/package-info.java,3\5\354505ebe978aac4ff42a33d0b4856ba45461eb5
+`
+0src/ua/nure/danylenko/practice7/entity/Port.java,7\7\7733cb363f1065ef676fa5150be2812d63a0f73a
+`
+0src/ua/nure/danylenko/practice7/entity/Type.java,d\2\d2c87bf1495f4a3da87c20791d9c9d60d3015d7e
+b
+2src/ua/nure/danylenko/practice7/entity/Device.java,e\4\e41df2fe16fcc17ad3f0761fb6d3058f58e24160
+Y
+)src/ua/nure/danylenko/practice7/Demo.java,6\4\64aac7d176b46a2b5f01b532da6bebb07fb0ed82
+Y
+)src/ua/nure/danylenko/practice7/Main.java,5\5\5509bed819e4732d868b9a96f50e0e99359efe03
+i
+9src/ua/nure/danylenko/practice7/entity/ObjectFactory.java,0\5\05169ef732eaff329c76da9f103939f61597a586
+b
+2src/ua/nure/danylenko/practice7/entity/Origin.java,0\e\0e21b358931eeb8c703fc3556e545751d25d7b1b
+9
+	input.xml,9\e\9e767aedff1384cf0508d56497633c289919a9ef
+9
+	input.xsd,2\d\2d54e5d0b459cae6ae0b864feb3aebc3e99ed125
+h
+8src/ua/nure/danylenko/practice7/constants/Constants.java,7\0\70d0109fa3f5e0929ac49c0981d00434e4988a72
+m
+=src/ua/nure/danylenko/practice7/controller/DOMController.java,8\9\89a6a0884a07aec9409a97df1e45b1fbe34bc6ee
+b
+2src/ua/nure/danylenko/practice7/constants/XML.java,5\a\5ab673b0495314c110b12f35a3098035188bf13d

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  XML schema -->
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://nure.ua/danylenko/practice7"
+            xmlns:tns="http://nure.ua/danylenko/practice7">
+
+    <xsd:element name="Devices">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="Device"
+                             type="tns:Device" maxOccurs="unbounded"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:complexType name="Device">
+        <xsd:sequence>
+            <xsd:element name="Name" type="xsd:token"/>
+            <xsd:element name="Origin" type="tns:Origin" />
+            <xsd:element name="Price" type="tns:Price" />
+            <xsd:sequence>
+                <xsd:element name="Type" type="tns:Type">
+                    <xsd:unique name="unik">
+                        <xsd:selector xpath="port"/>
+                        <xsd:field xpath="."/>
+                    </xsd:unique>
+                </xsd:element>
+            </xsd:sequence>
+            <xsd:element name="Critical" type="xsd:boolean" />
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="Type">
+        <xsd:sequence>
+            <xsd:element name="peripheral" type="xsd:boolean" minOccurs="0"/>
+            <xsd:element name="port" type="tns:Port" minOccurs="0" maxOccurs="unbounded"/>
+            <xsd:element name="power" type="tns:Watts" minOccurs="0"/>
+            <xsd:element name="cooler" type="xsd:boolean" minOccurs="0"/>
+            <xsd:element name="group" type="tns:group" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:simpleType name="Port">
+            <xsd:restriction base="xsd:string">
+                <xsd:enumeration value="USB"/>
+                <xsd:enumeration value="COM"/>
+                <xsd:enumeration value="LPT"/>
+            </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="group">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="input-output"/>
+            <xsd:enumeration value="multimedia"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="Watts">
+        <xsd:restriction base="xsd:int">
+            <xsd:minInclusive value="0"/>
+            <xsd:maxInclusive value="220"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="Price">
+        <xsd:restriction base="xsd:float">
+            <xsd:minInclusive value="10.0"/>
+            <xsd:maxInclusive value="200000.0"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="Origin">
+        <xsd:restriction base="xsd:token">
+            <xsd:enumeration value="China"/>
+            <xsd:enumeration value="Japan"/>
+            <xsd:enumeration value="USA"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+</xsd:schema>

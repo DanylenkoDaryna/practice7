@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<p7:Devices xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://nure.ua/danylenko/practice7 src/ua/nure/danylenko/practice7/input.xsd"
+            xmlns:p7="http://nure.ua/danylenko/practice7">
+    <Device>
+        <Name>Mouse</Name>
+        <Origin>China</Origin>
+        <Price>99.99</Price>
+        <Type>
+            <peripheral>true</peripheral>
+            <power>220</power>
+            <group>input-output</group>
+        </Type>
+        <Critical>false</Critical>
+    </Device>
+
+    <Device>
+        <Name>Notebook</Name>
+        <Origin>Japan</Origin>
+        <Price>1100.99</Price>
+        <Type>
+            <peripheral>false</peripheral>
+            <port>USB</port>
+            <port>COM</port>
+            <port>LPT</port>
+            <power>210</power>
+            <cooler>true</cooler>
+        </Type>
+        <Critical>true</Critical>
+    </Device>
+
+    <Device>
+        <Name>Monitor</Name>
+        <Origin>USA</Origin>
+        <Price>500.99</Price>
+        <Type>
+            <peripheral>true</peripheral>
+            <port>COM</port>
+            <port>LPT</port>
+            <power>50</power>
+            <cooler>false</cooler>
+            <group>multimedia</group>
+        </Type>
+        <Critical>false</Critical>
+    </Device>
+
+    <Device>
+        <Name>Printer</Name>
+        <Origin>USA</Origin>
+        <Price>550.00</Price>
+        <Type>
+            <peripheral>true</peripheral>
+            <port>LPT</port>
+            <power>50</power>
+        </Type>
+        <Critical>false</Critical>
+    </Device>
+
+</p7:Devices>
